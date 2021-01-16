@@ -18,3 +18,7 @@
 ![](https://gitee.com/BiAn-MoShangHuaKai/img/raw/master/data/20210117001055.png)
 * 客户端效果
 ![](https://gitee.com/BiAn-MoShangHuaKai/img/raw/master/data/20210117001150.png)
+#### 5. 注意事项
+一定要格外注意thrift的版本 尤其是thrift工具的版本 ，比如thrift工具版本0.9版本就会导致使用thrift --gen时报错
+一定要注意go.mod中thrift的 是使用的github/apache/...thrift 而不是git.apache.org/thrift.git如果使用这个依赖会导致在cmd/server/main.go 中包类型不匹配错误
+![](https://gitee.com/BiAn-MoShangHuaKai/img/raw/master/data/20210117002105.png)
