@@ -1,6 +1,18 @@
 #### 1. 项目描述
 是一个用go写的thrift的小demo，使用到了multiplyexecdProcess注册多个服务，多个服务使用一个main函数启动，在thrift client端连接thift服务时需要指定serviceName，值为thrift服务端在main函数中定义的
 #### 2. 目录说明
+.
+├── cmd
+├── gen
+├── gen-cpp
+├── gen-go
+├── go.mod
+├── go.sum
+├── helloService
+├── internal
+├── README.md
+├── rpc
+└── thrift
 --cmd ：可执行文件
   --server ：main中启动thriftService ，支持同时添加多个handle
   --client ：thrift 客户端开启入口，这里值测试了timeService
