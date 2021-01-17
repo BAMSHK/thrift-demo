@@ -1,0 +1,10 @@
+project(time_cpp_client)
+cmake_minimum_required(VERSION 3.13.0)
+add_compile_options(-std=c++11 -Wall)
+set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
+set(TARGET time_cpp_client)
+# thrift生成的cpp的源码
+file(GLOB GEN_CPP_HEADERS ../../../gen-cpp/*.h)
+file(GLOB GEN_CPP_SOURCES ../../../gen-cpp/*.cpp)
+add_executable(${TARGET} client.cpp ${GEN_CPP_HEADERS} ${GEN_CPP_SOURCES})
+target_link_libraries(${TARGET} -lthrift)

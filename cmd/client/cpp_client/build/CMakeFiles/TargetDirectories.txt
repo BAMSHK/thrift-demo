@@ -1,0 +1,3 @@
+/workspace/go/thrift_demo/cmd/client/cpp_client/build/CMakeFiles/rebuild_cache.dir
+/workspace/go/thrift_demo/cmd/client/cpp_client/build/CMakeFiles/edit_cache.dir
+/workspace/go/thrift_demo/cmd/client/cpp_client/build/CMakeFiles/time_cpp_client.dir

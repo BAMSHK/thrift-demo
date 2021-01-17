@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/time_cpp_client.dir/client.cpp.o CMakeFiles/time_cpp_client.dir/workspace/go/thrift_demo/gen-cpp/timeServe.cpp.o -o bin/time_cpp_client  -lthrift 
