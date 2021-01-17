@@ -2,20 +2,20 @@
 是一个用go写的thrift的小demo，使用到了multiplyexecdProcess注册多个服务，多个服务使用一个main函数启动，在thrift client端连接thift服务时需要指定serviceName，值为thrift服务端在main函数中定义的
 #### 2. 目录说明
 .
-├── cmd  ：可执行文件
-      |——server :main中启动thriftService ，支持同时添加多个handle
-      |——client :thrift 客户端开启入口，这里值测试了timeService
-         |——cpp_client : c++客户端
-         |——go_client  ：go客户端
-├── gen
-├── gen-cpp ：存放thrift生成的c++代码
-├── gen-go ：存放thrift生成的go代码，也可以进入到上述thrift目录之后使用for f in `find *.thrift` ; do thrift --gen go -o ../ $f ; done 
-├── go.mod ：go包管理工具
-├── go.sum ：记录包依赖关系
-├── internal ：internal/service：存放thrift的service实现
-├── README.md
-├── rpc ：该目录中存放的是thriftService代码，使用MutilpyexecdProcess支持注册服务
-└── thrift ：存放thrift 定义文件
+├── cmd  ：可执行文件 <br/>
+      |——server :main中启动thriftService ，支持同时添加多个handle <br/>
+      |——client :thrift 客户端开启入口，这里值测试了timeService <br/>
+         |——cpp_client : c++客户端 <br/>
+         |——go_client  ：go客户端 <br/>
+├── gen <br/>
+├── gen-cpp ：存放thrift生成的c++代码 <br/>
+├── gen-go ：存放thrift生成的go代码，也可以进入到上述thrift目录之后使用for f in `find *.thrift` ; do thrift --gen go -o ../ $f ; done  <br/>
+├── go.mod ：go包管理工具 <br/>
+├── go.sum ：记录包依赖关系 <br/>
+├── internal ：internal/service：存放thrift的service实现 <br/>
+├── README.md <br/>
+├── rpc ：该目录中存放的是thriftService代码，使用MutilpyexecdProcess支持注册服务 <br/>
+└── thrift ：存放thrift 定义文件 <br/>
 
 #### 3. 使用方法
 * 进入到rpc目录 修改thrift_service中的ip
