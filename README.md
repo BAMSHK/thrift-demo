@@ -30,3 +30,5 @@
 一定要格外注意thrift的版本 尤其是thrift工具的版本 ，比如thrift工具版本0.9版本就会导致使用thrift --gen时报错
 一定要注意go.mod中thrift的 是使用的github/apache/...thrift 而不是git.apache.org/thrift.git如果使用这个依赖会导致在cmd/server/main.go 中包类型不匹配错误
 ![](https://gitee.com/BiAn-MoShangHuaKai/img/raw/master/data/20210117002105.png)
+* 若要编译c++的代码则需要使用thrift的动态库，thrift的cpp 动态库是在编译thrift的源码时编译的，不过也可能安装thrift的时候只是编译了thrift的编译器并没有编译thrift 的库，具体参照thrift官网
+https://thrift.apache.org/docs/install/centos.html  注意这里的Add Optional C++ Language Library Dependencies就是编译c++动态库，这一步需要俩小步(1)Install C++ Lib Dependencies(2)Upgrade Boost >= 1.56 在更新boost的时候可能因为网络原因下载缓慢
