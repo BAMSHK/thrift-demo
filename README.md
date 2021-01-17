@@ -3,10 +3,10 @@
 #### 2. 目录说明
 .
 ├── cmd  ：可执行文件 <br/>
-            |——server :main中启动thriftService ，支持同时添加多个handle <br/>
-            |——client :thrift 客户端开启入口，这里值测试了timeService <br/>
-            |——cpp_client : c++客户端 <br/>
-            |——go_client  ：go客户端 <br/>
+|———|——server :main中启动thriftService ，支持同时添加多个handle <br/>
+|———|——client :thrift 客户端开启入口，这里值测试了timeService <br/>
+|———|——|——cpp_client : c++客户端 <br/>
+|———|——|——go_client  ：go客户端 <br/>
 ├── gen <br/>
 ├── gen-cpp ：存放thrift生成的c++代码 <br/>
 ├── gen-go ：存放thrift生成的go代码，也可以进入到上述thrift目录之后使用for f in `find *.thrift` ; do thrift --gen go -o ../ $f ; done  <br/>
